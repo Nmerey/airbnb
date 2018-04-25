@@ -64,3 +64,4 @@ gem "clearance"
 
 gem "bootstrap-sass"
 gem "figaro"
+gem 'omniauth-google-oauth2'
