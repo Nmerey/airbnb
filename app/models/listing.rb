@@ -1,3 +1,3 @@
-class User < ApplicationRecord
-  
+class Listing < ApplicationRecord
+
 end
