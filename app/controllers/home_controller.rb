@@ -1,5 +1,4 @@
-class HomeController < ActionController::Base	
-  include Clearance::Controller
+class HomeController < ApplicationController
 
   def index
 

@@ -11,12 +11,12 @@ user['password'] = 'qwer'
 ActiveRecord::Base.transaction do
   20.times do 
     user['first_name'] = Faker::Name.first_name 
-    user['last_name'] = Faker::Name.last_name
+    user['las_name'] = Faker::Name.last_name
     user['email'] = Faker::Internet.email
     user['gender'] = rand(1..2)
     user['phone'] = Faker::PhoneNumber.phone_number
     user['country'] = Faker::Address.country
-    user['birthdate'] = Faker::Date.between(50.years.ago, Date.today)
+    user['birthday'] = Faker::Date.between(50.years.ago, Date.today)
 
     User.create(user)
   end
@@ -33,8 +33,8 @@ ActiveRecord::Base.transaction do
     listing['property_type'] = ["House", "Entire Floor", "Condominium", "Villa", "Townhouse", "Castle", "Treehouse", "Igloo", "Yurt", "Cave", "Chalet", "Hut", "Tent", "Other"].sample
     listing['pet?'] = rand(0..1)
     listing['smoker?'] = rand(0..1)
-    listing['room_number'] = rand(0..5)
-    listing['bed_number'] = rand(1..6)
+    listing['bedrooms'] = rand(0..5)
+    listing['beds'] = rand(1..6)
     
 
     listing['country'] = Faker::Address.country

@@ -62,7 +62,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "clearance"
 
-gem "bootstrap-sass"
+gem 'bootstrap', '~> 4.1.0'
 gem "figaro"
 gem 'omniauth-google-oauth2'
-gem 'faker'
+gem 'jquery-rails'
