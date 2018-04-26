@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_26_021717) do
+ActiveRecord::Schema.define(version: 2018_04_26_022631) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2018_04_26_021717) do
     t.boolean "pet?"
     t.string "description"
     t.string "property_type"
+    t.integer "beds"
     t.index ["user_id"], name: "index_listings_on_user_id"
   end
 
