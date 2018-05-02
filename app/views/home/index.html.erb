@@ -18,7 +18,11 @@
             <div class="card-body">
               <h5 class="card-title"><%=list.property_type %></h5>
               <p class="card-text"><%=list.description %></p>
-              <a href="<%=%>" class="btn btn-primary">View Page</a>
+              <a href="/listings/<%=list.id%>" class="btn btn-primary">View Page</a>
+              <% if current_user.admin? || current_user.user_id == list.user_id %>
+                <a href="/listings/<%=list.id%>/edit" class="btn btn-primary">Edit</a>
+              <% end %>
+              
             </div>
           </div>
         </div>
