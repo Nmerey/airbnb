@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%=@property.property_type%></title>
+</head>
+<body>
+
+	<div class="card">
+		<div class="card-body">
+			<button> Reservation </button>
+			
+		</div>
+	  	<div class="card-body">
+	    	<h5 class="card-title"><%= @property.property_type %></h5>
+	    	<p class="card-text"><%= @property.description %></p>
+	    	<p class="card-text"><%= @property.price%>$</p>
+	    	<p class="card-text"><%= @property.address%></p>
+	    	<p class="card-text"><%= @property.city%></p>
+	    	<p class="card-text"><%= @property.country%></p>
+	    	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	    	<div>
+	    		<div>
+	    			<% if @property.pet? %>
+		    			<img src="https://previews.123rf.com/images/blankstock/blankstock1705/blankstock170501084/77845713-dog-paw-sign-icon-pets-symbol-report-document-information-and-check-tick-icons-currency-exchange-vec.jpg">
+		    			<p>pet allowed</p>
+
+		    		<% else %>
+		    			<img width="80" height="80" src="https://previews.123rf.com/images/alonastep/alonastep1610/alonastep161000429/65400032-no-pets-sign-paw-print-with-prohibition-symbol-with-pet-no-access-round-icon-on-white-background-sto.jpg">
+		    			<p>pet not allowed</p>
+
+		    		<% end -%>
+	    		</div>
+
+	    		<div>
+	    			<% if @property.smoker? %>
+	    				<img width="80" height="80" src="https://thumb1.shutterstock.com/display_pic_with_logo/2945839/326079620/stock-vector-smoking-area-sign-vector-illustration-326079620.jpg">
+	    				<p>smoking allowed</p>
+
+		    		<% else %>
+		    			<img width="80" height="80" src="https://thumb1.shutterstock.com/display_pic_with_logo/2539450/225321076/stock-photo-no-smoking-sign-isolated-on-white-225321076.jpg">
+		    			<p>smoking not allowed</p>
+
+		    		<% end -%>
+
+	    			
+	    		</div>
+	    	</div>
+	  	</div>
+	  <img class="card-img-bottom" src="http://via.placeholder.com/800x600" alt="Card image cap">
+	</div>
+
+	
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 class ListingsController < ApplicationController
 	def show
-		
+		@property = Listing.find(params[:id])
 	end
 
 	def edit
