@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-  enum status [:admin, :moderator :smertny]
   include Clearance::User
   has_many :authentications, dependent: :destroy
   has_many :listings
