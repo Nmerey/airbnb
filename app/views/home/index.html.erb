@@ -14,7 +14,7 @@
        <% @lists.each do |list| %>
         <div class="col-sm-4">
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
+            <img class="card-img-top" src="<%= list.photos %>" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title"><%=list.property_type %></h5>
               <p class="card-text"><%=list.description %></p>

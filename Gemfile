@@ -66,3 +66,6 @@ gem 'bootstrap', '~> 4.1.0'
 gem "figaro"
 gem 'omniauth-google-oauth2'
 gem 'carrierwave', '~> 1.0'
+gem 'jquery-rails'
+gem 'momentjs-rails'
+gem 'bootstrap-daterangepicker-rails'

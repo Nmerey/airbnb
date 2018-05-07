@@ -13,14 +13,12 @@ class ListingsController < ApplicationController
 
 		if @list.update(list_params)
 			redirect_to root_path
-			
 		end
-		
 	end
 
 	private
     
     def list_params
-        params.require(:listing).permit(:owner,:country)
+        params.require(:listing).permit(:owner, :country, :photos)
     end
 end

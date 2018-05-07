@@ -15,5 +15,7 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery3
+//= require moment
+//= require daterangepicker
 //= require popper
 //= require bootstrap-sprockets

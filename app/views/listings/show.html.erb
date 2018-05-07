@@ -9,7 +9,15 @@
 		<div class="card-body">
 			<button> Reservation </button>
 			
-		</div>
+	</div>
+	
+	<input type="text" class="daterange"/>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+  			$('input[class="daterange"]').daterangepicker();});
+		</script>
+	  	
 	  	<div class="card-body">
 	    	<h5 class="card-title"><%= @property.property_type %></h5>
 	    	<p class="card-text"><%= @property.description %></p>
@@ -21,7 +29,7 @@
 	    	<div>
 	    		<div>
 	    			<% if @property.pet? %>
-		    			<img src="https://previews.123rf.com/images/blankstock/blankstock1705/blankstock170501084/77845713-dog-paw-sign-icon-pets-symbol-report-document-information-and-check-tick-icons-currency-exchange-vec.jpg">
+		    			<img width="80" height="80" src="https://previews.123rf.com/images/blankstock/blankstock1705/blankstock170501084/77845713-dog-paw-sign-icon-pets-symbol-report-document-information-and-check-tick-icons-currency-exchange-vec.jpg">
 		    			<p>pet allowed</p>
 
 		    		<% else %>
@@ -46,7 +54,7 @@
 	    		</div>
 	    	</div>
 	  	</div>
-	  <img class="card-img-bottom" src="http://via.placeholder.com/800x600" alt="Card image cap">
+	  <img class="card-img-bottom" src="<%= @property.photos %>" alt="Card image cap">
 	</div>
 
 	

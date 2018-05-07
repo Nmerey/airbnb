@@ -6,8 +6,9 @@
   </p>
   <%= f.label :country %><br> 
   <%= f.text_field :country %>
-  </p>
   <p>
+  <%= f.file_field :photos, multiple: true %>
+  </p>
   <%= f.submit %>
   </p>
   <% end %>
